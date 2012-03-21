@@ -23,6 +23,7 @@
     h3 { text-align: center; color: #644607; }
     a { color: #644607; }
     .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
+    .disclaimer { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
     .download { float: right; }
     pre { background: #000; color: #fff; padding: 15px;}
     hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
@@ -31,22 +32,27 @@
 </head>
 
 <body>
-  <a href="https://github.com/flickerfly/ofac_checker"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+  <a href="https://github.com/codemis/ofac_checker"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
 
   <div id="container">
 
     <div class="download">
-      <a href="https://github.com/flickerfly/ofac_checker/zipball/master">
+      <a href="https://github.com/codemis/ofac_checker/zipball/master">
         <img border="0" width="90" src="https://github.com/images/modules/download/zip.png"></a>
-      <a href="https://github.com/flickerfly/ofac_checker/tarball/master">
+      <a href="https://github.com/codemis/ofac_checker/tarball/master">
         <img border="0" width="90" src="https://github.com/images/modules/download/tar.png"></a>
     </div>
 
-    <h1><a href="https://github.com/flickerfly/ofac_checker">ofac_checker</a>
-      <span class="small">by <a href="https://github.com/flickerfly">flickerfly</a></span></h1>
+    <h1><a href="https://github.com/codemis/ofac_checker">ofac_checker</a>
+      <span class="small">by <a href="https://github.com/codemis">codemis</a></span></h1>
 
     <div class="description">
+      This is designed to assist in maintaining compliance with the Department of the Treasury's <a href="http://www.treasury.gov/about/organizational-structure/offices/Pages/Office-of-Foreign-Assets-Control.aspx">Office of Foreign Asset Control</a>. They maintain a list called the Specially Designated Nationals list. OFAC requires that institutions moving money internationally scan the transactions prior to transferring the funds for any matches against this list.
+
       A Ruby script that looks through your .ach files, and compares the payees with the current OFAC list.  It will generate a CSV file with the results, and notify you when it has been completed by email.
+      
+    <div class="disclaimer">
+      This code is not provided with any type of a warranty and may not solve your problem of compliance. It is provided as-is and should be evaluated thoroughly for meeting your own compliance needs.
     </div>
 
     
